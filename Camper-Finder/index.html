@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camper Finder</title>
+    <script src="functions.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel='stylesheet' href='styles.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Kanit&family=Libre+Franklin:wght@300&family=Quicksand&family=Raleway&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <h1 id="name">Camper Finder</h1>
+
+
+    <div class="pop-upBoxes">
+        <!-- Features Menu -->
+        <button id="trigger" class="trigger">Features</button>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <button id="showBtn" class="showBtn">Apply</button>
+                <h1 class="title">Features</h1>
+                <div id="features" class="features">
+                    <!-- <h3 id="title">Features</h3> -->
+                </div>
+            </div>
+        </div><span class="separator">|</span>
+        <!-- manufacturer -->
+        <button class="manuTrigger" id="manuTrigger">Manufacturer</button>
+        <div class="manuModal">
+            <div class="manuContent">
+                <span class="manuCloseButton">&times;</span>
+                <button id="showBtn" class="showBtn">Apply</button>
+                <h1 class="title">Manufacturer</h1>
+                <div id="manufacturer">
+                    <input type="checkbox" id="volkswagen" name="volkswagen" value=""><label
+                        for="volkswagen">Volkswagen</label><br>
+                    <input type="checkbox" id="ford" name="ford" value=""><label for="ford">Ford</label><br>
+                    <input type="checkbox" id="mercedes" name="mercedes" value=""><label
+                        for="mercedes">Mercedes-Benz</label><br>
+                    <input type="checkbox" id="vauxhall" name="vauxhall" value=""><label
+                        for="vauxhall">Vauxhall</label><br>
+                    <input type="checkbox" id="fiat" name="fiat" value=""><label for="fiat">Fiat</label><br>
+                    <input type="checkbox" id="nissan" name="nissan" value=""><label for="nissan">Nissan</label><br>
+                </div>
+
+            </div>
+        </div><span class="separator">|</span>
+
+        <!-- Colour menu -->
+        <button class="colourTrigger" id="colourTrigger">Colour</button>
+        <div class="colourModal">
+            <div class="colourContent" id="colourContent">
+                <span class="colourCloseButton">&times;</span>
+                <button id="showBtn" class="showBtn">Apply</button>
+                <h1 class="title">Colour</h1>
+
+                <div class="colour" id="whichColor">
+
+                </div>
+            </div>
+        </div><span class="separator">|</span>
+
+        <!-- Price Menu -->
+        <button class="price-trigger" id="price-trigger">Price</button>
+        <div class="price-modal">
+            <div class="price-content">
+                <span class="price-close-button">&times;</span>
+                <button id="showBtn" class="showBtn">Apply</button>
+                <h1 class="title">Price</h1>
+                <div id="price">
+                    <input type="range" id="what-Price" name="price" min="0" max="1000" values="0"> <label
+                        for="price"></label>
+                    <p>Value: <span id="priceText"> </span> </p>
+                </div>
+            </div>
+        </div><span class="separator">|</span>
+
+        <!-- Location Menu -->
+        <button class="activate" id="activate">Location</button>
+        <div class="modal2">
+            <div class="content2">
+                <span class="close-btn">&times;</span>
+                <!-- <h1 id="location">Location</h1> -->
+                <div class="ukmapContainer" id="ukMapContainer">
+                    <img src="ukMap.jpg" alt="Map of the UK" class="mapUK" id="ukMap">
+                    <svg id="svg" xmlns="http://www.w3.org/2000/svg">
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id='holder' class="holder"></main>
+
+</body>
+
+</html>
